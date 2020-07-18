@@ -1,6 +1,148 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout
-    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
-    android:layout_height="match_parent">
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".Authentication.SignUp.MVP.SignUpActivity"
+    android:background="@drawable/login">
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+    <TextView
+        android:id="@+id/centreHelp"
+        android:layout_centerInParent="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        />
+
+    <ImageButton
+        android:id="@+id/signup_LoginText"
+        android:layout_width="80dp"
+        android:layout_height="70dp"
+        android:layout_above="@id/centreHelp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginBottom="25dp"
+        android:background="@drawable/signup_page_login" />
+
+    <ImageButton
+        android:id="@+id/signup_SignUpText"
+        android:layout_width="155dp"
+        android:layout_height="85dp"
+        android:layout_below="@id/signup_LoginText"
+        android:layout_marginLeft="-30dp"
+        android:background="@drawable/signup_text_button"
+        android:padding="10dp"/>
+    <ImageButton
+        android:id="@+id/signup_googleSignIn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/google"
+        android:layout_below="@id/signup_SignUpText"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="15dp"/>
+    <ImageButton
+        android:id="@+id/signup_facebookSignIn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/facebook"
+        android:layout_below="@id/signup_googleSignIn"
+        android:layout_marginTop="12dp"
+        android:layout_marginLeft="15dp"/>
+
+
+    <LinearLayout
+        android:id="@+id/EditTextBackground"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_alignParentRight="true"
+        android:layout_marginLeft="-15dp"
+        android:layout_marginRight="-60dp"
+        android:layout_toRightOf="@id/signup_SignUpText"
+        android:background="@drawable/signup_page_edit_text"
+        android:orientation="vertical"
+        android:elevation="10dp"
+        android:layout_marginTop="100dp"
+        android:layout_marginBottom="70dp"
+        >
+
+        <TextView
+            android:id="@+id/signUpPage_EmailText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Email"
+            android:layout_marginTop="130dp"
+            android:layout_marginLeft="20dp"
+            android:textColor="@color/white"
+            android:textSize="25sp"/>
+
+        <EditText
+            android:id="@+id/signUpPage_enterEmail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="70dp"
+            android:background="@drawable/edit_text_id_background"
+            android:padding="10dp"
+            android:inputType="textEmailAddress"
+            />
+
+        <TextView
+            android:id="@+id/signUpPage_PasswordText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Password"
+            android:layout_marginTop="30dp"
+            android:layout_marginLeft="20dp"
+            android:textColor="@color/white"
+            android:textSize="25sp"
+            />
+        <EditText
+            android:id="@+id/signUpPage_enterPassword"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="70dp"
+            android:background="@drawable/edit_text_id_background"
+            android:padding="10dp"
+            android:inputType="textPassword"
+            />
+        <TextView
+            android:id="@+id/signUpPage_Repeat_PasswordText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Confirm Password"
+            android:layout_marginTop="30dp"
+            android:layout_marginLeft="20dp"
+            android:textColor="@color/white"
+            android:textSize="25sp"
+            />
+        <EditText
+            android:id="@+id/signUpPage_enterRepeatPassword"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="70dp"
+            android:background="@drawable/edit_text_id_background"
+            android:padding="10dp"
+            android:inputType="textPassword"
+            />
+
+
+    </LinearLayout>
+
+    <ImageButton
+        android:id="@+id/signUpPage_Login_button"
+        android:layout_width="200dp"
+        android:layout_height="80dp"
+        android:background="@drawable/signup_button"
+        android:layout_below="@id/EditTextBackground"
+        android:layout_toRightOf="@id/centreHelp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="-125dp"
+        android:elevation="11dp"
+        />
+
+
+
+</RelativeLayout>
