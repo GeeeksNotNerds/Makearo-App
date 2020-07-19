@@ -18,5 +18,11 @@
         android:layout_centerHorizontal="true"
         android:layout_marginTop="10dp"
         />
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/myfiles_recyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/myfiles_logo"
+        android:layout_marginTop="20dp"/>
 
 </RelativeLayout>
