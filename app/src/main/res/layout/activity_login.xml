@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".Authentication.Login.MVP.LoginActivity"
+    android:background="@drawable/login">
+
+    <TextView
+        android:id="@+id/centreHelp"
+        android:layout_centerInParent="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        />
+
+    <ImageButton
+        android:id="@+id/LoginText"
+        android:layout_width="160dp"
+        android:layout_height="89dp"
+        android:layout_above="@id/centreHelp"
+        android:layout_marginLeft="-30dp"
+        android:layout_marginBottom="25dp"
+        android:background="@drawable/login_text" />
+
+    <ImageButton
+        android:id="@+id/SignUpText"
+        android:layout_width="100dp"
+        android:layout_height="70dp"
+        android:layout_below="@id/LoginText"
+        android:layout_marginLeft="10dp"
+        android:background="@drawable/signup_text"
+        android:padding="10dp"/>
+    <ImageButton
+        android:id="@+id/googleSignIn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/google"
+        android:layout_below="@id/SignUpText"
+        android:layout_marginTop="40dp"
+        android:layout_marginLeft="15dp"/>
+    <ImageButton
+        android:id="@+id/facebookSignIn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/facebook"
+        android:layout_below="@id/googleSignIn"
+        android:layout_marginTop="12dp"
+        android:layout_marginLeft="15dp"/>
+
+
+    <LinearLayout
+        android:id="@+id/EditTextBackground"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_alignParentRight="true"
+        android:layout_marginLeft="-15dp"
+        android:layout_marginRight="-60dp"
+        android:layout_toRightOf="@id/LoginText"
+        android:background="@drawable/login_background"
+        android:orientation="vertical"
+        android:elevation="10dp"
+        android:layout_marginTop="100dp"
+        android:layout_marginBottom="70dp"
+        >
+
+    <TextView
+        android:id="@+id/loginPage_EmailText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Email"
+        android:layout_marginTop="220dp"
+        android:layout_marginLeft="20dp"
+        android:textColor="@color/white"
+        android:textSize="25sp"/>
+
+    <EditText
+        android:id="@+id/loginPage_enterEmail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="70dp"
+        android:background="@drawable/edit_text_id_background"
+        android:padding="10dp"
+        android:inputType="textEmailAddress"
+        />
+
+    <TextView
+        android:id="@+id/loginPage_PasswordText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Password"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="20dp"
+        android:textColor="@color/white"
+        android:textSize="25sp"
+        />
+    <EditText
+        android:id="@+id/loginPage_enterPassword"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="70dp"
+        android:background="@drawable/edit_text_id_background"
+        android:padding="10dp"
+        android:inputType="textPassword"
+        />
+
+
+    </LinearLayout>
+
+    <ImageButton
+        android:id="@+id/loginPage_Login_button"
+        android:layout_width="200dp"
+        android:layout_height="80dp"
+        android:background="@drawable/login_button"
+        android:layout_below="@id/EditTextBackground"
+        android:layout_toRightOf="@id/centreHelp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="-125dp"
+        android:elevation="11dp"
+        />
+
+
+
+</RelativeLayout>
