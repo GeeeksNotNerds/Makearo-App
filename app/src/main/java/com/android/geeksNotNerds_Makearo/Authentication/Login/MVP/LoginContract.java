@@ -6,5 +6,6 @@ public class LoginContract {
     }
     interface presenter{
 
+        void doLogin(String  email, String password);
     }
 }
