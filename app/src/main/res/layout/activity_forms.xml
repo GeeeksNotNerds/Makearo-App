@@ -10,5 +10,8 @@
     android:layout_centerHorizontal="true"
     android:layout_marginTop="20dp"
     android:text="Create your form"
-    android:textSize="36sp"/>
+    android:textSize="36sp"
+    android:drawableLeft="@drawable/ic_baseline_format_align_left_24"
+    android:drawablePadding="5dp"/>
+
 </RelativeLayout>
